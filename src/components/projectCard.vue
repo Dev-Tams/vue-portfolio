@@ -1,12 +1,18 @@
 <template>
-    <div class="project-card">
+  <div class="project-card">
+    <a :href="url" target="_blank" rel="noopener noreferrer">
       <h3>{{ title }}</h3>
+      <div>
+        <img :src="srcset" :alt="title + ' image'">
+      </div>
       <p>{{ description }}</p>
-    </div>
-  </template>
+    </a>
+  </div>
+</template>
+
   
   <script setup>
-  defineProps(['title', 'description'])
+  defineProps(['url', 'srcset','title', 'description'])
   </script>
   
   <style scoped>

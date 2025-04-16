@@ -23,40 +23,42 @@
     <h3>SKILLS</h3>
   </div>
 
-  <div>
+  <section>
+    <div>
     <h3>My Projects</h3>
-    <ProjectCard
+
+    <p> Here are a few projects I have laid my hands on</p>
+
+    <div>
+      <ProjectCard
       v-for="(project, index) in projects"
       :key="index"
+      :url="project.url"
+      :srcset="project.srcset"
       :title="project.title"
       :description="project.description"
     />
+    </div>
+   
   </div>
+  </section>
+ 
 
-<FooterCard />
+  <FooterCard></FooterCard>
 
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import ProjectCard from './components/ProjectCard.vue'
 import NavBar from './components/NavBar.vue'
-import SocialLink from './components/SocialLink.vue'
-import NavBar from './components/FooterCard.vue' 
+import FooterCard from './components/FooterCard.vue'
 
 const name = 'Tammy'
 
 const projects = [
-  { title: 'Portfolio Website', description: 'Built with Vue' },
-  { title: 'To-do App', description: 'Simple CRUD app' },
-  { title: 'Blog Platform', description: 'Markdown-based content system' },
-]
-const socialLinks = [
-  { image: 'Github', url: 'https://github.com/dev_tams', alt: "Github", ariaLabel: "Github profile" },
-  { image: 'LinkedIn', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
-  { image: 'X', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
-]
-
-  
-
+  { url: '#', srcset:'', title: 'Portfolio Website', description: 'Built with Vue' },
+  { url: '', srcset:'', title: 'Portfolio Website', description: 'Built with Vue' },
+  { url: '', srcset:'', title: 'Portfolio Website', description: 'Built with Vue' },
+  { url: '', srcset:'', title: 'Portfolio Website', description: 'Built with Vue' },
+] 
 </script>
