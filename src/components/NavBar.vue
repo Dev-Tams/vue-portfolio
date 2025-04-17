@@ -3,8 +3,8 @@
     <div class=" flex justify-center
          h-10">
         
-         <div class="smm:bg-grey h-fit rounded-3xl items-center p-2">
-      <ul class=" flex justify-center items-center w-max text-sm">
+         <div class="smm:bg-grey h-14 rounded-3xl items-center p-2">
+      <ul class=" flex justify-center items-center w-max text-sm mt-2">
         <li class="mx-4" v-for="item in navLinks" :key="item.text">
           <a :href="item.href">{{ item.text }}</a>
         </li>

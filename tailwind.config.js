@@ -11,6 +11,9 @@ export default {
       },
       backgroundColor: {
        grey: 'hsla(0, 0%, 100%, 0.08)',
+    },
+    textColor:{
+      grey: 'hsla(0, 0%, 100%, 0.08)',
     }
     },
   plugins: [],

@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card">
+  <div class="project-card bg-grey rounded-lg shadow-md h-[23rem] w-[23rem]">
     <a :href="url" target="_blank" rel="noopener noreferrer">
       <h3>{{ title }}</h3>
       <div>

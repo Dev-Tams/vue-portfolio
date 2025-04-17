@@ -1,13 +1,9 @@
 <template>
-    <div class="socialLink">
-      <ul>
-        <li>
+        <li class="m-4">
           <a :href="url" target="_blank" :alt="alt" :aria-label="ariaLabel">
             {{ image }}
           </a>
         </li>
-      </ul>
-    </div>
   </template>
   
   <script setup>
@@ -17,7 +13,5 @@
     image: String,
     ariaLabel: String
   })
-
- 
   </script>
   
