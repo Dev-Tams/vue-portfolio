@@ -1,5 +1,5 @@
 <template>
-        <li class="m-4">
+        <li class="m-4 md:m-6">
           <a :href="url" target="_blank" :alt="alt" :aria-label="ariaLabel">
             {{ image }}
           </a>

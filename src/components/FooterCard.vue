@@ -1,11 +1,11 @@
 <template>
   <footer>
-    <div class="flex flex-col items-center justify-center">
-      <h3 class=" text-2xl font-mono mt-4" id="contact">
+    <div class="flex flex-col items-center md:items-start justify-center md:mt-4 md:ml-20">
+      <h3 class=" text-2xl md:text-5xl lg:text-6xl font-mono font-bold mt-4 md:mt-8" id="contact">
         Get in Touch
       </h3>
       <div>
-        <ul class="flex ">
+        <ul class="flex md:mt-6">
           <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :image="social.image"
             :alt="social.alt" :aria-label="social.ariaLabel" />
         </ul>

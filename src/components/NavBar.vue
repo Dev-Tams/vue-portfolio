@@ -1,18 +1,19 @@
 <template>
   <nav class="mt-20 mb-5">
-    <div class=" flex justify-center
-         h-10">
+    <div class="flex smm:justify-center md:justify-between h-10">
         
          <div class="smm:bg-grey h-14 rounded-3xl items-center p-2">
-      <ul class=" flex justify-center items-center w-max text-sm mt-2">
+      <ul class=" flex justify-center items-center w-max text-sm md:text-base mt-2">
         <li class="mx-4" v-for="item in navLinks" :key="item.text">
           <a :href="item.href">{{ item.text }}</a>
         </li>
       </ul>
     </div>
       <div class="smm:hidden md:block">
-        <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :image="social.image"
-          :alt="social.alt" :aria-label="social.ariaLabel" />
+        <ul class="flex mx-5">
+          <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :image="social.image"
+            :alt="social.alt" :aria-label="social.ariaLabel" />
+        </ul>
       </div>
 
     </div>
