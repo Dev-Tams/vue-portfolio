@@ -1,11 +1,11 @@
 <template>
   <div class="project-card bg-grey rounded-lg shadow-md h-[23rem] w-[23rem]">
     <a :href="url" target="_blank" rel="noopener noreferrer">
-      <h3>{{ title }}</h3>
+      <h3 class="text-base opacity-70 font-semibold">{{ title }}</h3>
       <div>
         <img :src="srcset" :alt="title + ' image'">
       </div>
-      <p>{{ description }}</p>
+      <p class="text-sm mt-2 opacity-80">{{ description }}</p>
     </a>
   </div>
 </template>

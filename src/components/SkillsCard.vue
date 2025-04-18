@@ -1,17 +1,17 @@
 <template>
     <li class="m-4">
-        <img :srcset="srcset" :alt="alt" />
       <a :href="url" target="_blank" :aria-label="ariaLabel">
-        {{ image }}
+        <img :src="src" :alt="alt" class="w-10 h-10 object-contain" />
       </a>
     </li>
 </template>
+
 
 <script setup>
 defineProps({
 url: String,
 alt: String,
-image: String,
+src: String,
 ariaLabel: String
 })
 </script>
