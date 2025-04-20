@@ -30,7 +30,7 @@ export
     url: 'https://github.com/Dev-Tams/File_upload',
     srcset: "https://api.microlink.io/?url=https%3A%2F%2Fgithub.com%2FDev-Tams%2FFile_upload&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url",
     title: 'File Upload',
-    description: "Chem-Pe powers restaurants across Africa. It enables customers to browse menus, customize orders, select order types and secure mobile payments."
+    description: "A projects built using php to upload files. It allows users to upload files and store them in a database. The project also includes a file manager for easy file management."
   },
   {
     url: 'https://github.com/Dev-Tams/celo-tutorials-101-building-Dex-Aggregator-celo-coding-tutorial-from-scratch.md.',
