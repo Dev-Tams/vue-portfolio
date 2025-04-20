@@ -5,8 +5,8 @@
         Get in Touch
       </h3>
       <div>
-        <ul class="flex md:mt-6">
-          <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :image="social.image"
+        <ul class="flex md:mt-6 mt-4">
+          <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :src="social.image"
             :alt="social.alt" :aria-label="social.ariaLabel" />
         </ul>
       </div>
@@ -25,9 +25,9 @@
 
 <script setup>
 const socialLinks = [
-  { image: 'Mail', url: 'Mailto:tammyalemu@gmail.com', alt: "Github", ariaLabel: "Github profile" },
-  { image: 'LinkedIn', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
-  { image: 'X', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
+  { image: '/images/mail1.png', url: 'Mailto:tammyalemu@gmail.com', alt: "Github", ariaLabel: "Github profile" },
+  { image: '/images/x.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
+  { image: '/images/link1.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
 ]
 import SocialLink from '../components/SocialLink.vue' 
 const year = new Date().getFullYear()

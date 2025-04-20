@@ -5,3 +5,30 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+.glow {
+    transition: box-shadow 1s ease-in-out;
+  }
+  
+  .glow.in-view {
+    box-shadow: 0 0 20px rgba(117, 251, 76, 0.2);
+  }
+  
+
+  @keyframes breatheGlow {
+    0%, 100% {
+      box-shadow: 0 0 12px rgba(117, 251, 76, 0.15);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(117, 251, 76, 0.3);
+    }
+  }
+  
+  .glow {
+    transition: box-shadow 1s ease-in-out;
+  }
+  
+  .glow.in-view {
+    animation: breatheGlow 4s ease-in-out infinite;
+  }
+  
