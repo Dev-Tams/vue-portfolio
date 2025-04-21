@@ -31,6 +31,6 @@ const socialLinks = [
   { image: '/images/linkedin.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
   { image: '/images/twitter.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
 ];
-import SocialLink from '../components/SocialLinkNav.vue';
+import SocialLink from '../components/SocialLinkNav.vue' 
 </script>
 
