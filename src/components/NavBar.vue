@@ -11,7 +11,7 @@
       </div>
       <div class="smm:hidden md:block">
         <ul class="grid grid-flow-col">
-          <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :src="social.image"
+          <SocialLinkNav v-for="social in socialLinks" :key="social.image" :url="social.url" :src="social.image"
             :alt="social.alt" :aria-label="social.ariaLabel" id="icons"/>
         </ul>
       </div>
@@ -31,6 +31,6 @@ const socialLinks = [
   { image: '/images/linkedin.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
   { image: '/images/twitter.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
 ];
-import SocialLink from '../components/SocialLinkNav.vue' 
+import SocialLinkNav from '../components/SocialLinkNav.vue'
 </script>
 
