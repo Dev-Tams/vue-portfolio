@@ -2,7 +2,7 @@
 export
  const projects = [
   {
-    url: 'https://ecorenew.brimble.app',
+    url: 'https://ecorenew.com.ng',
     srcset: "https://api.microlink.io/?url=https%3A%2F%2Fecorenew.brimble.app&overlay.browser=light&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url",
     title: 'Ecorenew',
     description: 'Eco Renew is a Nigerian-born initiative committed to combating plastic pollution through community action and education.'
