@@ -26,8 +26,8 @@
 <script setup>
 const socialLinks = [
   { image: '/images/mail1.png', url: 'Mailto:tammyalemu@gmail.com', alt: "Github", ariaLabel: "Github profile" },
-  { image: '/images/x.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
-  { image: '/images/link1.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
+  { image: '/images/link1.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
+  { image: '/images/x.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
 ]
 import SocialLink from '../components/SocialLink.vue' 
 const year = new Date().getFullYear()
