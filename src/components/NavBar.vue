@@ -10,9 +10,9 @@
         </ul>
       </div>
       <div class="smm:hidden md:block">
-        <ul class="flex mx-5">
+        <ul class="grid grid-flow-col">
           <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :src="social.image"
-            :alt="social.alt" :aria-label="social.ariaLabel" />
+            :alt="social.alt" :aria-label="social.ariaLabel" id="icons"/>
         </ul>
       </div>
 
@@ -27,9 +27,10 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { image: '/images/git.svg', url: 'https://github.com/dev_tams', alt: "Github", ariaLabel: "Github profile" },
-  { image: '/images/link1.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
-  { image: '/images/x.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
+  { image: '/images/github.svg', url: 'https://github.com/dev_tams', alt: "Github", ariaLabel: "Github profile" },
+  { image: '/images/linkedin.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
+  { image: '/images/twitter.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
 ];
-import SocialLink from '../components/SocialLink.vue';
+import SocialLink from '../components/SocialLinkNav.vue';
 </script>
+
