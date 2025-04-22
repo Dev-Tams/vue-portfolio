@@ -1,7 +1,7 @@
 export 
 const aboutMeText = [
   {
-    text: "I'm naturally drawn to complexity and love turning challenges into clean, efficient solutions" +
+    text: "I'm naturally drawn to complexity and love turning challenges into clean, efficient solutions." +
       " Over the years, I’ve worked on everything from passion projects to startup-scale applications, each " +
       "one sharpening my ability to build with purpose."
   },

@@ -74,7 +74,7 @@
     </section>
 
 
-    <section data-aos="zoom-out">
+    <section data-aos="zoom-out" id="projects">
       <div class="lg:mt-20">
         <h3 class="text-2xl lg: md:text-5xl xl:text-6xl font-mono font-bold my-2"> Projects</h3>
         <div>
