@@ -8,7 +8,7 @@
 <section class="Tammy Alemu" data-aos="fade-up">
     <div class="flex flex-col smm:items-center md:items-start justify-center smm:mt-12 md:mt-24  mb-5">
       <div class="my-5">
-        <h1 class=" Tamarankuro Alemu smm:text-2xl md:text-4xl xl:text-6xl font-mono font-bold">Hi, I am Tammy Alemu ✨ </h1>
+        <h1 class=" Tamarankuro Alemu smm:text-2xl md:text-4xl xl:text-6xl font-mono font-bold">Hi, I am {{name}} </h1>
         <p class="text-sm opacity-75 mt-4 smm:ml-14 w-fit md:-ml-0 md:text-base lg:text-lg">Software Developer</p>
       </div>
 
@@ -109,6 +109,7 @@ import { onMounted } from 'vue';
 
 
 const cv = 'https://drive.google.com/file/d/1hzHbRBZXkuYj-zRcElaqiFF-vlNe5I9_/view?usp=sharing'
+const name = 'Tammy ✨'
 
 
 
