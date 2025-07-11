@@ -27,7 +27,7 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { image: '/images/github.svg', url: 'https://github.com/dev_tams', alt: "Github", ariaLabel: "Github profile" },
+  { image: '/images/github.svg', url: 'https://github.com/dev-tams', alt: "Github", ariaLabel: "Github profile" },
   { image: '/images/linkedin.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
   { image: '/images/twitter.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
 ];
