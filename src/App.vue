@@ -19,6 +19,11 @@
           bg-gradient-to-r from-lime-500 to-green-400 hover:from-green-400 hover:to-lime-500 transition-all duration-300 hover:scale-105">
           <button class=" ml-1 p-4 hover:bg-grey font-semibold"><a :href="cv" target="_blank">DOWNLOAD</a></button>
         </div>
+        <div
+          class=" border-2 border-[hsla(0,0%,100%,.12)] shadow-md hover:shadow-lg w-32 text-xs  h-14 rounded-xl mt-2
+          bg-gradient-to-r from-lime-500 to-green-400 hover:from-green-400 hover:to-lime-500 transition-all duration-300 hover:scale-105">
+          <button class=" ml-1 p-4 hover:bg-grey font-semibold"><a :href="cv" target="_blank">VIEW</a></button>
+        </div>
       </div>
     </div>
   </section>
@@ -108,7 +113,7 @@ import { onMounted } from 'vue';
 
 
 
-const cv = 'https://drive.google.com/file/d/1hzHbRBZXkuYj-zRcElaqiFF-vlNe5I9_/view?usp=sharing'
+const cv = 'https://drive.google.com/file/d/1dNJwRHzBsRUUGu41BnDTV8QM39fa6Xs2/view?usp=sharing'
 const name = 'Tammy ✨'
 
 
