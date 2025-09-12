@@ -76,7 +76,7 @@
 
     <section data-aos="zoom-out" id="projects">
       <div class="lg:mt-20">
-        <h3 class="text-2xl lg: md:text-5xl xl:text-6xl font-mono font-bold my-2"> Projects</h3>
+        <h3 class="text-xl lg: md:text-3xl xl:text-4xl font-mono font-bold my-2"> Work Experience & Projects</h3>
         <div>
           <div class=" grid grid-flow-col lg:grid-flow-row gap-4 md:gap-4 overflow-auto lg:grid-cols-2 xl:grid-cols-3">
             <ProjectCard v-for="(project, index) in projects" :key="index" :url="project.url" :srcset="project.srcset"
