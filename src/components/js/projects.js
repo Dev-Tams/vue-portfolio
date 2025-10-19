@@ -27,10 +27,10 @@ export
     description: 'This project demonstrates the integration of Google OAuth with a Laravel application using Laravel Socialite. It includes routes for user authentication and token management.'
   },
   {
-    url: 'https://github.com/Dev-Tams/File_upload',
-    srcset: "https://api.microlink.io/?url=https%3A%2F%2Fgithub.com%2FDev-Tams%2FFile_upload&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url",
+    url: 'https://dev-tams.github.io/file-upload-page/',
+    srcset: "https://api.microlink.io/?url=https%3A%2F%2Fdev-tams.github.io%2Ffile-upload-page%2F&overlay.browser=light&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url",
     title: 'File Upload',
-    description: "A projects built using php to upload files. It allows users to upload files and store them in a database. The project also includes a file manager for easy file management."
+    description: "A lightweight REST API for uploading, managing, and restoring user files — built with Go, Gin, and GORM."
   },
   {
     url: 'https://github.com/Dev-Tams/celo-tutorials-101-building-Dex-Aggregator-celo-coding-tutorial-from-scratch.md.',
