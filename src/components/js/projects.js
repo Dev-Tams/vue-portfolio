@@ -8,7 +8,7 @@ export
     description: 'Eco Renew is a Nigerian-born initiative committed to combating plastic pollution through community action and education.'
   },
   {
-    url: 'https://Chem-Pe.com',
+    url: 'https://www.Chem-Pe.com',
     srcset: "https://api.microlink.io/?url=https%3A%2F%2Fwww.chem-pe.com%2F%23&overlay.browser=light&overlay." +
       "background=%23c1c1c1&screenshot=true&embed=screenshot.url",
     title: 'Chem-Pe',
