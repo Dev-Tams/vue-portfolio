@@ -5,31 +5,31 @@
     </div>
     <NavBar />
 
-<section class="Tammy Alemu" data-aos="fade-up">
-    <div class="flex flex-col smm:items-center md:items-start justify-center smm:mt-12 md:mt-24  mb-5">
-      <div class="my-5">
-        <h1 class=" Tamarankuro Alemu smm:text-2xl md:text-4xl xl:text-6xl font-mono font-bold">Hi, I am {{name}} </h1>
-        <p class="text-sm opacity-75 mt-4 smm:ml-14 w-fit md:-ml-0 md:text-base lg:text-lg">Software Developer</p>
-      </div>
-
-      <div class="md:my-6">
-        <small class=" text-[10px] mb-4 smm:ml-5 md:ml-4 text-sm">MY RESUME</small>
-        <div
-          class=" border-2 border-[hsla(0,0%,100%,.12)] shadow-md hover:shadow-lg w-32 text-xs  h-14 rounded-xl mt-2
-          bg-gradient-to-r from-lime-500 to-green-400 hover:from-green-400 hover:to-lime-500 transition-all duration-300 hover:scale-105">
-          <button class=" ml-1 p-4 hover:bg-grey font-semibold"><a :href="cv" target="_blank">DOWNLOAD</a></button>
+    <section class="Tammy Alemu" data-aos="fade-up">
+      <div class="flex flex-col smm:items-center md:items-start justify-center smm:mt-12 md:mt-24  mb-5">
+        <div class="my-5">
+          <h1 class=" Tamarankuro Alemu smm:text-2xl md:text-4xl xl:text-6xl font-mono font-bold">Hi, I am {{ name }}
+          </h1>
+          <p class="text-sm opacity-75 mt-4 smm:ml-14 w-fit md:-ml-0 md:text-base lg:text-lg">Software Developer</p>
         </div>
-      </div>
-    </div>
-  </section>
 
-    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="md:my-6">
+          <small class=" text-[10px] mb-4 smm:ml-5 md:ml-4 text-sm">MY RESUME</small>
           <div
-            class="absolute w-[200vw] h-32 bg-[#30634E] 
-            opacity-30 blur-3xl transform -rotate-[20deg] 
-            -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            class=" border-2 border-[hsla(0,0%,100%,.12)] shadow-md hover:shadow-lg w-32 text-xs  h-14 rounded-xl mt-2
+          bg-gradient-to-r from-lime-500 to-green-400 hover:from-green-400 hover:to-lime-500 transition-all duration-300 hover:scale-105">
+            <button class=" ml-1 p-4 hover:bg-grey font-semibold"><a :href="cv" target="_blank">DOWNLOAD</a></button>
           </div>
         </div>
+      </div>
+    </section>
+
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+      <div class="absolute w-[200vw] h-32 bg-[#30634E] 
+            opacity-30 blur-3xl transform -rotate-[20deg] 
+            -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+      </div>
+    </div>
     <section class="about glow mt-10 md:mt-14" ref="aboutSection">
       <div class="relative w-full pt-12 pb-6 px-4  bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-xl">
 
@@ -73,20 +73,18 @@
 
     </section>
 
-
     <section data-aos="zoom-out" id="projects">
       <div class="lg:mt-20">
-        <h3 class="text-xl lg: md:text-3xl xl:text-4xl font-mono font-bold my-2"> Work Experience & Projects</h3>
-        <div>
-          <div class=" grid grid-flow-col lg:grid-flow-row gap-4 md:gap-4 overflow-auto lg:grid-cols-2 xl:grid-cols-3">
-            <ProjectCard v-for="(project, index) in projects" :key="index" :url="project.url" :srcset="project.srcset"
-              :title="project.title" :description="project.description" />
-          </div>
+        <h3 class="text-xl md:text-3xl xl:text-4xl font-mono font-bold my-2">
+          Work Experience & Projects
+        </h3>
+
+        <div class="grid grid-flow-col lg:grid-flow-row gap-4 overflow-auto lg:grid-cols-2 xl:grid-cols-3">
+          <ProjectCard v-for="project in projects" :key="project.title" v-bind="project" />
         </div>
       </div>
-
-
     </section>
+
 
 
 
@@ -95,10 +93,11 @@
 
 </template>
 
+
 <script setup>
 import ProjectCard from './components/projectCard.vue'
-import {projects} from './components/js/projects.js'
-import {skills} from './components/js/skills.js'
+import { projects } from './components/js/projects.js'
+import { skills } from './components/js/skills.js'
 import NavBar from './components/NavBar.vue'
 import FooterCard from './components/FooterCard.vue'
 import AboutMe from './components/AboutMe.vue'
@@ -107,8 +106,7 @@ import SkillsCard from './components/SkillsCard.vue'
 import { onMounted } from 'vue';
 
 
-
-const cv = 'https://drive.google.com/file/d/1dNJwRHzBsRUUGu41BnDTV8QM39fa6Xs2/view?usp=sharing'
+const cv = import.meta.env.VITE_CV_URL
 const name = 'Tammy ✨'
 
 
@@ -173,9 +171,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 .hover\:cursor-custom:hover {
   cursor: url('/images/cursor.svg'), auto;
 }
-
 </style>
