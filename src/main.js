@@ -14,3 +14,4 @@ AOS.init({
   easing: 'ease-in-out', // smooth easing
   once: true, // whether animation should happen only once - while scrolling down
 });
+
