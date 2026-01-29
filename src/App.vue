@@ -57,7 +57,7 @@
             <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
               <div class="absolute -right-24 -top-24 h-56 w-56 rounded-full bg-emerald-400/10 blur-3xl"></div>
 
-              <div class="flex items-center gap-4">
+              <div class="lg:flex smm:hidden items-center gap-4">
                 <img
                   src="/images/avi.png"
                   alt="Tamarankuro Alemu (Tammy)"
@@ -69,7 +69,7 @@
                 </div>
               </div>
 
-              <div class="mt-6 space-y-3 text-sm leading-7 text-white/75">
+              <div class="lg:flex smm:hidden mt-6 space-y-3 text-sm leading-7 text-white/75">
                 <p class="text-pretty">
                   I like building the “real deal”  infrastructure-level systems, especially in finance and logic-heavy domains.
                 </p>
@@ -186,7 +186,7 @@
   </div>
 
   <!-- Tablet and up: Grid layout -->
-  <div class="mt-6 hidden sm:grid gap-4 sm:grid-cols-2 lg:gap-6 xl:grid-cols-3">
+  <div class="mt-6 hidden sm:grid gap-4 sm:grid-cols-2 lg:gap-11 xl:grid-cols-3">
     <ProjectCard 
       v-for="project in projects" 
       :key="project.title" 
