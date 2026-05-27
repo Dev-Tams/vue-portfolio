@@ -94,11 +94,11 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="mt-10 sm:mt-14 lg:mt-20">
+      <section id="about" class="mt-10 sm:mt-14 lg:mt-20" aria-labelledby="about-heading">
         <div class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8">
           <div class="flex items-end justify-between gap-6">
             <div>
-              <h3 class="text-lg font-semibold sm:text-xl">About</h3>
+              <h2 id="about-heading" class="text-lg font-semibold sm:text-xl">About</h2>
               <p class="mt-2 text-sm text-white/60">A quick story and what I like building.</p>
             </div>
           </div>
@@ -142,10 +142,10 @@
       </section>
 
       <!-- SKILLS -->
-      <section class="mt-10 sm:mt-14 lg:mt-20">
+      <section id="skills" class="mt-10 sm:mt-14 lg:mt-20" aria-labelledby="skills-heading">
         <div class="flex items-end justify-between gap-6">
           <div>
-            <h3 class="text-lg font-semibold sm:text-xl">Skills</h3>
+            <h2 id="skills-heading" class="text-lg font-semibold sm:text-xl">Skills</h2>
             <p class="mt-2 text-sm text-white/60">Tools I reach for when building production systems.</p>
           </div>
         </div>
@@ -165,10 +165,10 @@
       </section>
 
       <!-- PROJECTS -->
-      <section id="projects" class="mt-10 sm:mt-14 lg:mt-20 pb-16">
+      <section id="projects" class="mt-10 sm:mt-14 lg:mt-20 pb-16" aria-labelledby="projects-heading">
   <div class="flex items-end justify-between gap-6">
     <div>
-      <h3 class="text-xl font-mono font-bold sm:text-2xl lg:text-4xl">Work Experience & Projects</h3>
+      <h2 id="projects-heading" class="text-xl font-mono font-bold sm:text-2xl lg:text-4xl">Work Experience & Projects</h2>
       <p class="mt-2 text-sm text-white/60">Selected work, experiments, and non-NDA builds.</p>
     </div>
   </div>
@@ -276,12 +276,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Keep your custom cursor if you want it on key interactive elements */
-.hover\:cursor-custom:hover {
-  cursor: url('/images/cursor.svg'), auto;
-}
-
-
 /* Hide scrollbar but keep functionality */
 .scrollbar-hide {
   -ms-overflow-style: none;

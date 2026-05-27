@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div class="flex flex-col items-center md:items-start justify-center md:mt-4 md:ml-20">
-      <h3 class=" text-2xl md:text-5xl lg:text-6xl font-mono font-bold mt-4 md:mt-8 ml-2" id="contact">
+      <h2 class=" text-2xl md:text-5xl lg:text-6xl font-mono font-bold mt-4 md:mt-8 ml-2" id="contact">
         Get in Touch
-      </h3>
+      </h2>
       <div>
         <ul class="flex md:mt-6 mt-4">
           <SocialLink v-for="social in socialLinks" :key="social.image" :url="social.url" :src="social.image"
@@ -25,7 +25,7 @@
 
 <script setup>
 const socialLinks = [
-  { image: '/images/mail.svg', url: 'Mailto:tammyalemu@gmail.com', alt: "Github", ariaLabel: "Github profile" },
+  { image: '/images/mail.svg', url: 'mailto:tammyalemu@gmail.com', alt: "Email", ariaLabel: "Email Tammy Alemu" },
   { image: '/images/linkedin.svg', url: 'https://linkedin.com/in/tammyalemu', alt: "LinkedIn", ariaLabel: "LinkedIn profile" },
   { image: '/images/twitter.svg', url: 'https://x.com/tammyalemu', alt: "X", ariaLabel: "X profile" },
 ]
