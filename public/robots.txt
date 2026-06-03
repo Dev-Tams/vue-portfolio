@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alemu.wtf/sitemap.xml
+Sitemap: https://www.alemu.wtf/sitemap.xml
