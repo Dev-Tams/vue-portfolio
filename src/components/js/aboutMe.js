@@ -48,7 +48,7 @@ export const aboutMeText = [
       { text: "So if you’re wondering—where’s my work? (Put your mouth where your work is.) Most of my work has been done within firms, so what you’ll see here are non-NDA experiences or cases where I experimented with something new or switched to a new way of building things. You can verify here. If you’re seeing this now or years later, I must have done—or finally finished—building a product with my experience. For now, I’m " },
       {
         text: "writing here",
-        href: "https://medium.com/tammyalemu",
+        href: "https://medium.com/@tammyalemu",
         ariaLabel: "Read Tammy Alemu on Medium"
       },
       { text: " and stacking experience while questioning industry standards to stay at the top of my game." }
