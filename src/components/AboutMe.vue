@@ -15,7 +15,22 @@
           selection:bg-emerald-400/30 selection:text-white
         "
       >
-        {{ item.text }}
+        <template v-if="item.segments">
+          <template v-for="(segment, segmentIndex) in item.segments" :key="segmentIndex">
+            <a
+              v-if="segment.href"
+              :href="segment.href"
+              target="_blank"
+              rel="noopener noreferrer"
+              :aria-label="segment.ariaLabel"
+              class="font-semibold text-emerald-300 underline decoration-emerald-300/40 underline-offset-4 transition hover:text-emerald-200 hover:decoration-emerald-200"
+            >
+              {{ segment.text }}
+            </a>
+            <template v-else>{{ segment.text }}</template>
+          </template>
+        </template>
+        <template v-else>{{ item.text }}</template>
       </p>
     </div>
 
@@ -78,7 +93,22 @@
               selection:bg-emerald-400/30 selection:text-white
             "
           >
-            {{ item.text }}
+            <template v-if="item.segments">
+              <template v-for="(segment, segmentIndex) in item.segments" :key="segmentIndex">
+                <a
+                  v-if="segment.href"
+                  :href="segment.href"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  :aria-label="segment.ariaLabel"
+                  class="font-semibold text-emerald-300 underline decoration-emerald-300/40 underline-offset-4 transition hover:text-emerald-200 hover:decoration-emerald-200"
+                >
+                  {{ segment.text }}
+                </a>
+                <template v-else>{{ segment.text }}</template>
+              </template>
+            </template>
+            <template v-else>{{ item.text }}</template>
           </p>
 
           <!-- Clap card (at end of expanded content) -->
